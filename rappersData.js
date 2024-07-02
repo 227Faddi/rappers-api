@@ -10,6 +10,15 @@ const calculateAge = (dateOfBirth) => {
 };
   
 const rappers = {
+    'notFound': {
+        id: 0,
+        name: 'notFound',
+        dateOfBirth: 'notFound',
+        get age() {
+        return 'notFound';
+        },
+        nationality: 'notFound'
+    },
     '21savage': {
         id: 1,
         name: 'Shéyaa Bin Abraham-Joseph',
@@ -279,7 +288,7 @@ const rappers = {
         return calculateAge(this.dateOfBirth);
         },
         nationality: 'American'
-    }
+    },
 };
   
 module.exports = { rappers };

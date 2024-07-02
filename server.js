@@ -12,8 +12,11 @@ app.get('/', (req, res) =>{
 
 app.get('/api/:rapperName', (req, res) =>{
   const rapperName = req.params.rapperName.toLowerCase().replace(/\s/g, "")
-  console.log(rapperName)
-  res.json(rappers[rapperName])
+  if(rappers[rapperName]){
+    res.json(rappers[rapperName])
+  } else{
+    res.json(rappers['notFound'])
+  }
 })
 
 app.get('/api', (req, res) =>{
