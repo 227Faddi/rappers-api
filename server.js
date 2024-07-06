@@ -10,7 +10,7 @@ app.get('/', (req, res) =>{
   res.sendFile(__dirname + "/index.html")
 })
 
-app.get('/api/:rapperName', (req, res) =>{
+app.get('/api/rappers/:rapperName', (req, res) =>{
   const rapperName = req.params.rapperName.toLowerCase().replace(/\s/g, "")
   if(rappers[rapperName]){
     res.json(rappers[rapperName])
@@ -19,7 +19,7 @@ app.get('/api/:rapperName', (req, res) =>{
   }
 })
 
-app.get('/api', (req, res) =>{
+app.get('/api/rappers/all', (req, res) =>{
   res.json(rappers)
 })
 

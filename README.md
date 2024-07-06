@@ -2,8 +2,6 @@
 
 A comprehensive API providing detailed information about various rappers.
 
-![alt tag](preview.gif)
-
 ## How It's Made:
 
 **Tech used:** Node.js, Express
