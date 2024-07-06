@@ -1,35 +1,36 @@
 # 🎤 Rappers API : [Visit Here](https://rappers-api-l2wq.onrender.com/)
 
-A comprehensive API providing detailed information about various rappers.
+Rappers API is a back-end application that provides detailed information about various rappers, including their names, ages, dates of birth, and nationalities. You can access the API [here](https://rappers-api-l2wq.onrender.com/).
 
-## How It's Made:
+```json
+{
+    "21savage": {
+        "id": 1,
+        "name": "Shéyaa Bin Abraham-Joseph",
+        "dateOfBirth": "1992-10-22",
+        "age": 31,
+        "nationality": "British"
+    }
+}
+```
+
+## How It's Made
 
 **Tech used:** Node.js, Express
 
-### Description:
-
-The Rappers API is a Node.js application built with Express to serve information about different rappers. The data includes names, dates of birth, ages (calculated dynamically), and nationalities. This API can be used to retrieve a list of all rappers or details about a specific rapper.
-
-### Features:
-
-- **RESTful Endpoints:** Simple and clear API endpoints to fetch data about rappers.
-- **Dynamic Data Calculation:** Automatically calculates the current age of each rapper.
-- **JSON Response:** Data is served in JSON format for easy integration with other applications.
-
-## Lessons Learned:
-
-Building this API reinforced several key concepts and practices:
-
-- **API Design:** Understanding how to structure and design RESTful API endpoints.
-- **Dynamic Data Handling:** Using JavaScript to dynamically calculate and serve data (e.g., calculating ages from dates of birth).
-- **Modularity:** Organizing code in a modular fashion for better maintainability and scalability.
-- **Error Handling:** Implementing robust error handling to ensure the API responds appropriately to invalid requests.
-- **Documentation:** The importance of clear and comprehensive documentation for users and developers interacting with the API.
-
 ## Usage
 
-To use the Rappers API, you can send GET requests to the following endpoints:
+You can interact with the Rappers API using the following endpoints:
 
-- **Get All Rappers:**
-```http
-GET /api/rappers
+- [https://rappers-api-l2wq.onrender.com/api/rappers/:rapperName](https://rappers-api-l2wq.onrender.com/api/rappers/:rapperName): Retrieves data about a specific rapper.
+- [https://rappers-api-l2wq.onrender.com/api/rappers/all](https://rappers-api-l2wq.onrender.com/api/rappers/all): Retrieves data for all rappers.
+
+## Optimizations
+
+- **Dynamic Age Calculation**: Automatically computes ages from birth dates.
+- **Normalized Input**: Converts names to lowercase and removes spaces for accurate searches.
+- **Error Handling**: Ensures graceful handling of errors and missing data.
+
+## Lessons Learned
+
+This project enhanced my skills in API design, JavaScript date manipulation, and code modularity. It reinforced the importance of efficient coding practices and continuous learning.
