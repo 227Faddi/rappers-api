@@ -1,6 +1,6 @@
 # 🎤 Rappers API : [Visit Here](https://rappers-api-l2wq.onrender.com/)
 
-Rappers API is a back-end application that provides detailed information about various rappers, including their names, ages, dates of birth, and nationalities. You can access the API [here](https://rappers-api-l2wq.onrender.com/).
+Rappers API is a back-end application that provides detailed information about various rappers, including their names, ages, dates of birth, and nationalities.
 
 ```json
 {
@@ -23,7 +23,7 @@ Rappers API is a back-end application that provides detailed information about v
 You can interact with the Rappers API using the following endpoints:
 
 - [https://rappers-api-l2wq.onrender.com/api/rappers/:rapperName](https://rappers-api-l2wq.onrender.com/api/rappers/:rapperName): Retrieves data about a specific rapper.
-- [https://rappers-api-l2wq.onrender.com/api/rappers/all](https://rappers-api-l2wq.onrender.com/api/rappers/all): Retrieves data for all rappers.
+- [https://rappers-api-l2wq.onrender.com/api/rappers](https://rappers-api-l2wq.onrender.com/api/rappers): Retrieves data for all rappers.
 
 ## Optimizations
 

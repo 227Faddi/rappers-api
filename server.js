@@ -19,7 +19,7 @@ app.get('/api/rappers/:rapperName', (req, res) =>{
   }
 })
 
-app.get('/api/rappers/all', (req, res) =>{
+app.get('/api/rappers', (req, res) =>{
   res.json(rappers)
 })
 
