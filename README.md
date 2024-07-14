@@ -32,5 +32,7 @@ You can interact with the Rappers API using the following endpoints:
 - **Error Handling**: Ensures graceful handling of errors and missing data.
 
 ## Lessons Learned
-
 This project enhanced my skills in API design, JavaScript date manipulation, and code modularity. It reinforced the importance of efficient coding practices and continuous learning.
+
+## Other Projects:
+Explore more of my recent projects on [My Portfolio](https://faliloukhouma.com).
